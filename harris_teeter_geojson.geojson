@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "harris_teeter_geojson",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "store": "grocery" }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -78.90619208822875, 36.069605320949705 ], [ -78.90617561012418, 36.069580603792858 ], [ -78.906035546235401, 36.068954435819442 ], [ -78.906702909470226, 36.06881437193065 ], [ -78.906900646724992, 36.069498213270037 ], [ -78.90619208822875, 36.069605320949705 ] ] ] ] } }
+]
+}
