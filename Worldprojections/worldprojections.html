@@ -9,21 +9,75 @@
     <h1>In this project I learned how to display images in different projections</h1>
     
     <h2 style="color:red">Describe in your own words how you displayed the map in different projections using QGIS</h2>
-    <p>You can write a paragraph here</p>
+    <p>I displayed the map in different projections by changing the projection by using the button in the lower-right corner in QGIS. The indicatrix mapper tool created circles over the projection, which allowed us to see where the map was stretched and distorted. </p>
     
     <h2>WGS84 Projection</h2>
-    <h3>Some observations</h3>
+    <h3>This map preserves the accuracy for a lot of the world, however it is warped in both shape and area towards the poles. </h3>
     <a href=".//maps/4326.png">
     <img src=".//maps/4326.png" alt="WGS84" width='500px'>
     </a>
     <h2>Aitoff Projection</h2>
-    <h3>Some observations</h3>
+    <h3>This map distorts direction and shape, but attempts to balance the warping of area and shape to make the map more accurate.</h3>
     <a href=".//maps/54043.png">
     <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
     </a>
     <h2 style="color:red">Now, you should <u>add the following projections on your own:</u></h2>
     <h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3>
     <p></p>
+
+
+
+
+
+    <h2>Pseudo-Mercator Projection</h2>
+    <h3>This map preserves shape at the expense of area, making the regions toward the poles seem much larger then they are in reality.</h3>
+    <a href="./maps/HW3_3857.png">
+    <img src="./maps/HW3_3857.png" alt="WGS84" width='500px'>
+    </a>
+
+
+
+    <h2>Sphere Winkel I / Winkel Tripel Projection</h2>
+    <h3>This map distorts distance, direction, shape, and area, but distorting all of these characteristics helps minimize the disturbance of any specific one.</h3>
+    <a href="./maps/HW3_53018.png">
+    <img src="./maps/HW3_53018.png" alt="WGS84" width='500px'>
+    </a>
+
+
+    <h2>Cylindrical Equal Area Projection</h2>
+    <h3>This map preserves land area at the expense of land shape towards the poles.</h3>
+    <a href="./maps/HW3_54034.png">
+    <img src="./maps/HW3_54034.png" alt="WGS84" width='500px'>
+    </a>
+
+
+    <h2>Equidistant Conic Projection</h2>
+    <h3>Unlike other maps, this projection maintains the shape and area towards the north pole. However, it continues to warp shape and area toward the south pole.</h3>
+    <a href="./maps/HW3_54027.png">
+    <img src="./maps/HW3_54027.png" alt="WGS84" width='500px'>
+    </a>
+
+    <h2>North Pole Azimuthal Equidistant Projection</h2>
+    <h3>This map is similar to the Equidistant Conic Projection, as they both maintain shape and area toward the north pole. This map gets stretched sooner then the previous one towards the south pole.</h3>
+    <a href="./maps/HW3_102016.png">
+    <img src="./maps/HW3_102016.png" alt="WGS84" width='500px'>
+    </a>
+
+
+    <h1>My additional projections:</h1>
+
+    <h2>102096 Projection</h2>
+    <h3>I thought this map was interesting, how it bended the earth and shape of it to maintain the shape and area towards the south pole, above Antarctica.</h3>
+    <a href="./maps/HW3_102096extra.png">
+    <img src="./maps/HW3_102096extra.png" alt="WGS84" width='500px'>
+    </a>
+
+    <h2>102589 Projection</h2>
+    <h3>I thought it was interesting how this projection was able to largely maintain the shape and area in the southern hemisphere like in South America, Africa and Australia, but at the great expense of Europe and Asia on the map.</h3>
+    <a href="./maps/HW3_102589extra.png">
+    <img src="./maps/HW3_102589extra.png" alt="WGS84" width='500px'>
+    </a>
+
     <h2>Data used for this project</h2>
     <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
 </body>
