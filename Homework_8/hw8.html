@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 8</title>
+</head>
+<body>
+<h1>Homework 8 - Sara Cheifetz</h1>
+<h2>Question: How many Target stores are in North Carolina's college towns?</h2>
+<!-- Your map goes here -->
+<a href="./hw8_map.png">
+    <img src="./hw8_map.png" alt="your map" width='800px'>
+    </a>
+
+<h3>For this assignment, my question asked how many Target stores were in college towns in North Carolina? Many students go to Target to buy various school supplies or other items. In Chapel Hill, there is one on Franklin Street, which is within walking distance from campus and many UNC students shop there. To start my assignment, I found a shapefile for every college and university in the United States and a shapefile for every Target store location and opened both into QGIS. I then exported the files to reproject them into a North Carolina projection. I narrowed down the data to only include colleges or stores that were in North Carolina by removing ones in all other states from the attribute table. I decided the area of a "college town" was anywhere within a 5 mile radius of a college. I created a buffer, represented by the yellow polygons on the map, that is included the area within 5 miles of each college, which is represented by the green circles. Next, I used the intersect tool with the Target stores layer and the buffer polygons layer to find all stores that fell within this 5 mile radius of a college. I added the gray county map of North Carolina in the background to better show where these vectors are located in the state. Overall, I found that there are 120 Targets within 5 miles of a college in North Carolina.</h3>
+<!-- Link to your shapefile in Github and you CSV -->
+<h4>Links to data used:</h4>
+    <a href="./Target_2264.shp"> Target stores shapefile (exported in 2246) </a>
+    <p></p>
+    <a href="./Colleges_2264.shp"> Colleges and Universities shapefile (exported in 2246)</a>
+    <p></p>
+    <a href="./buffer_around_colleges.shp"> College towns buffer shapefile </a>
+    <p></p>
+    <a href="./target_in_buffer_points.shp"> Points that intersect shapefile </a>
+    <p></p>
+    <a href="./North_Carolina_State_and_County_Boundary_Polygons.shp"> NC counties shapefile </a>
+
+</body>
+</html>
